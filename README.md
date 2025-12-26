@@ -1,4 +1,5 @@
 STEDI Human Balance Analytics: AWS Data Lakehouse Project
+
 📌 Project Overview
 The STEDI team is developing a hardware-enabled mobile app called "STEDI Step Trainer" that helps users train their balance. This project involves building a multi-zone Data Lakehouse using AWS Glue, S3, and Athena to process data from three sources:
 
@@ -48,7 +49,7 @@ Configuration of the SQL Query Transform node
 📊 Final Data Audit
 After resolving the data quality issues, the final row counts confirmed a successful pipeline:
 Opens in a new window
-www.reddit.com
+
 
 Final Athena verification query results
 
@@ -58,6 +59,7 @@ accelerometer_trusted	Trusted	40,981	Filtered by user consent
 customer_curated	Curated	482	Unique users with validated serial numbers
 step_trainer_trusted	Trusted	14,460	Validated device data (482 users × 30 readings)
 machine_learning_curated	Curated	43,681	Final ML Feature Set (Joined sensor data)
+
 📁 Repository Contents
 /scripts: Python/PySpark scripts for all 5 AWS Glue Jobs.
 
